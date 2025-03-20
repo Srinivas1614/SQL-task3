@@ -1,0 +1,2 @@
+mysqldump -u root -p source_db > source_db.sql
+psql -U postgres -d destination_db -f source_db.sql
